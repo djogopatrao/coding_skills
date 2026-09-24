@@ -7,9 +7,11 @@ The repository intentionally favors a compact workflow over a large generic
 skill catalogue:
 
 1. **Handover** prepares an existing project for a different coding agent.
-2. **Implementation** delivers focused changes with meaningful tests.
-3. **Debugging** finds and fixes defects from evidence.
-4. **Sign-off** validates completed work, preserves reusable context, and
+2. **Onboarding** receives that handover in OpenCode and verifies it against
+   the repository before work starts.
+3. **Implementation** delivers focused changes with meaningful tests.
+4. **Debugging** finds and fixes defects from evidence.
+5. **Sign-off** validates completed work, preserves reusable context, and
    creates a focused commit.
 
 ## Repository layout
@@ -23,6 +25,8 @@ skills/
     ├── project-debugging/
     │   └── SKILL.md
     ├── project-implementation/
+    │   └── SKILL.md
+    ├── project-onboarding/
     │   └── SKILL.md
     └── project-signoff/
         └── SKILL.md
@@ -40,6 +44,7 @@ cp -R skills/claude/project-handover <project>/.claude/skills/
 # Local Qwen through OpenCode
 cp -R skills/opencode/project-implementation <project>/.opencode/skills/
 cp -R skills/opencode/project-debugging <project>/.opencode/skills/
+cp -R skills/opencode/project-onboarding <project>/.opencode/skills/
 cp -R skills/opencode/project-signoff <project>/.opencode/skills/
 ```
 
