@@ -39,13 +39,13 @@ skills directory. Keep each directory name and its `SKILL.md` unchanged.
 
 ```bash
 # Claude Code
-cp -R skills/claude/project-handover <project>/.claude/skills/
+cp -R qwen/skills/claude/project-handover <project>/.claude/skills/
 
 # Local Qwen through OpenCode
-cp -R skills/opencode/project-implementation <project>/.opencode/skills/
-cp -R skills/opencode/project-debugging <project>/.opencode/skills/
-cp -R skills/opencode/project-onboarding <project>/.opencode/skills/
-cp -R skills/opencode/project-signoff <project>/.opencode/skills/
+cp -R qwen/skills/opencode/project-implementation <project>/.opencode/skills/
+cp -R qwen/skills/opencode/project-debugging <project>/.opencode/skills/
+cp -R qwen/skills/opencode/project-onboarding <project>/.opencode/skills/
+cp -R qwen/skills/opencode/project-signoff <project>/.opencode/skills/
 ```
 
 For reusable personal skills rather than project-local ones, install them in
@@ -68,7 +68,7 @@ or copied logs and configuration from a real environment. Review
 [SECURITY.md](SECURITY.md) before contributing and run:
 
 ```bash
-python3 scripts/check_public_content.py
+python3 qwen/scripts/check_public_content.py
 ```
 
 ## Status
@@ -76,3 +76,5 @@ python3 scripts/check_public_content.py
 This repository currently contains the first Claude-to-local-Qwen workflow.
 Additional skills should be added only when they address a recurring task that
 is not already covered by this compact set.
+
+Installation commands above assume the repository root. This directory preserves the original Qwen-oriented collection; model-specific additions now live beside it.

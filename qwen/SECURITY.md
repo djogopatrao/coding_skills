@@ -22,7 +22,7 @@ Use clearly fictional placeholders instead, for example `YOUR_API_KEY`,
 Run the repository check and inspect the staged diff:
 
 ```bash
-python3 scripts/check_public_content.py
+python3 qwen/scripts/check_public_content.py
 git diff --cached --check
 git diff --cached
 ```
