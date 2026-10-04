@@ -1,5 +1,13 @@
 # AI Skills
 
+## Local runtime and hardware
+
+Qwen runs through **Ollama**, with **OpenCode** as the coding agent and a configured context window of **131,072 tokens**.
+
+Hardware: NVIDIA GeForce RTX 3060 with 12 GB VRAM, AMD Ryzen 7 7700, and 64 GB system RAM.
+
+The context figure describes configured capacity, not the amount used by every task. Runtime versions and the exact Qwen model/quantization are not fixed by this collection.
+
 A small, curated collection of portable coding-agent skills for projects that
 move between Claude Code and local Qwen/OpenCode.
 

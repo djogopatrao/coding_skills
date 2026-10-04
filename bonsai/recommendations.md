@@ -1,5 +1,16 @@
 # Ternary Bonsai 2 27B PQ2_0: recommended uses and usage tips
 
+## Runtime and hardware context
+
+| Model | Inference runtime | Coding agent | Configured context window |
+|---|---|---|---|
+| Qwen | Ollama | OpenCode | 131,072 tokens |
+| Ternary Bonsai 2 27B PQ2_0 | llama.cpp | OpenCode | 131,072 tokens |
+
+Hardware: NVIDIA GeForce RTX 3060 with 12 GB VRAM, AMD Ryzen 7 7700, and 64 GB system RAM.
+
+The setup is user-reported. The assessments below concern the Bonsai/OpenCode sessions; they are not a controlled comparison with Qwen. Context capacity does not establish actual session usage or explain the reasoning failures by itself. Recorded durations depend on the local setup and are not standardized performance measurements.
+
 **Use Ternary Bonsai 2 27B PQ2_0 for small, verifiable tasks with clear boundaries and human review.** Our results show useful code inspection and debugging ability, but inconsistent reasoning, weak reproduction scripts, and a tendency to keep investigating instead of delivering.
 
 This assessment applies to the **model, quantization and OpenCode setup tested here**. We have not isolated which component causes each weakness.

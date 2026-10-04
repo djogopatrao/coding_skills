@@ -1,5 +1,13 @@
 # Ternary Bonsai 2 27B skills — v1.1
 
+## Evaluation setup
+
+The local Ternary Bonsai 2 27B PQ2_0 model runs through **llama.cpp**, with **OpenCode** as the coding agent and a configured context window of **131,072 tokens**.
+
+Hardware: NVIDIA GeForce RTX 3060 with 12 GB VRAM, AMD Ryzen 7 7700, and 64 GB system RAM.
+
+These settings are user-reported. Context capacity is not actual session token usage. Timing observations apply to this setup; inference throughput, runtime versions and GPU offload settings were not measured in these reviews.
+
 Compact OpenCode instructions for bounded Python/C work. The observed trials used Ternary Bonsai 2 27B PQ2_0. These instructions address its observed workflow failures; they are not a guarantee of model reliability or a benchmark against other models.
 
 ## Suitable tasks and limits

@@ -1,5 +1,16 @@
 # Coding skills for local models
 
+## Reported local setup
+
+| Model | Inference runtime | Coding agent | Configured context window |
+|---|---|---|---|
+| Qwen | Ollama | OpenCode | 131,072 tokens |
+| Ternary Bonsai 2 27B PQ2_0 | llama.cpp | OpenCode | 131,072 tokens |
+
+Hardware: NVIDIA GeForce RTX 3060 with 12 GB VRAM, AMD Ryzen 7 7700, and 64 GB system RAM.
+
+These are the user-reported runtime and hardware settings for the local workflow. The configured context capacity is not a measurement of tokens consumed by each session. Recorded durations reflect this setup and should not be treated as hardware-independent model benchmarks.
+
 A collection of concise coding-agent instructions organized by the model they were developed for. Skills guide scope, investigation, testing, implementation and handover; they do not change model weights or guarantee correctness.
 
 The first directory level identifies the intended model family. Runtime-specific folders inside each model section indicate where its skills are used.
