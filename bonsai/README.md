@@ -40,6 +40,14 @@ Read [recommendations.md](recommendations.md) for the full assessment and usage 
 
 Load core, one workflow and the relevant language guidance. Defaults are starting limits, overridden by the task's explicit constraints. The audit requires a baseline within the first four post-load calls when feasible and delivery at the limit. Debugging/implementation bound initial diagnosis without dropping required validation. Prompt budgets are not mechanically enforced.
 
+## Hosted-agent delegation through MCP
+
+The repository also includes a [local delegation MCP server](mcp/local-delegate/README.md) for Claude Code, Codex, or another MCP-capable hosted agent to offload bounded work to the local llama.cpp/Bonsai model.
+
+The gateway intentionally exposes narrow tasks rather than a generic prompt endpoint. Local outputs are schema-constrained and marked as candidate work; the hosted agent remains responsible for source verification, running tests, security-sensitive judgment, architecture, destructive operations, and final sign-off.
+
+This is intended to reduce hosted-model usage when validating a local result costs less than having the hosted model perform the entire subtask.
+
 ## Install
 
 From the repository root, copy the chosen folders into your project's skills directory:
